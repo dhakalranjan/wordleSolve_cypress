@@ -1,0 +1,1 @@
+The NY Times Wordle is a popular word game. I solved it using Cypress. The answer is revealed in the network response. Therefore, I intercepted the JSON data from the network, retrieved the answer, and typed it in. Voila, it's solved!
