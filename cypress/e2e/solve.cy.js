@@ -11,7 +11,7 @@ describe('Solving Wordle Game', () => {
         cy.get('[data-testid="Play"]').click()
         cy.get('.Modal-module_closeIcon__TcEKb').click()
 
-        cy.request("https://www.nytimes.com/svc/wordle/v2/" + todayDate + ".json").then((response) => {
+        cy.request(`https://www.nytimes.com/svc/wordle/v2/${todayDate}.json`).then((response) => {
             let answer = response.body.solution;
             cy.log(answer);
 
